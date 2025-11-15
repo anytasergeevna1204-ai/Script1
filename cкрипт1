@@ -7,5 +7,13 @@ for j in $(cat $1$i)
 do 
 age=$(echo $j | cut -d ":" -f2)
 #echo $age
-if
+if [ $age -lt $min ]
+then
+max=$age
+fi
+done
+done
+echo $min
+echo $max
+
 
